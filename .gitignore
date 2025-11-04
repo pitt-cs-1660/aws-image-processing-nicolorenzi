@@ -222,4 +222,5 @@ __marimo__/
 # test files
 output-*
 
+# scratch file
 saved.md
