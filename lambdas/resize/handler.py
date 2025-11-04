@@ -50,12 +50,6 @@ def resize_handler(event, context):
 
                     print(f"Processing: s3://{bucket_name}/{object_key}")
 
-                    ######
-                    #
-                    #  TODO: add resize lambda code here
-                    #
-                    ######
-
                     # download image from S3
                     image = download_from_s3(bucket_name, object_key)
                     print(f"Downloaded image: {image.size}")

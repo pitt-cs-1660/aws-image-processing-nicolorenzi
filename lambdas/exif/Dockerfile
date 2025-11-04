@@ -9,6 +9,6 @@ RUN uv sync
 
 COPY handler.py ${LAMBDA_TASK_ROOT}/
 
-RUN uv sync --locked --no-install-project --no-editable
+ENV PYTHONPATH="${LAMBDA_TASK_ROOT}/.venv/lib/python3.13/site-packages"
 
 CMD ["handler.exif_handler"]
